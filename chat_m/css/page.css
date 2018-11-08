@@ -1,0 +1,545 @@
+input{
+	border-radius:0;
+}
+button{
+	border-radius:0;
+	-webkit-appearance: none;
+}
+/*alert*/
+html,body{
+	width:7.5rem;
+	height: 100%;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+#bgw{
+	width: 7.5rem;
+	height: 100%;
+	position:fixed;
+	top: 0;
+	left: 0;
+	background:#FFFFFF;
+	z-index: -100;
+}
+#global_head{
+	height: 0.7rem;
+	line-height: 0.7rem;
+	position:fixed;
+	top: 0;
+	left: 0;
+	background-color: #0085ab;
+	color:#FFFFFF;
+	font-size: 0.4rem;
+	text-align: center;
+	width: 100%;
+	display: none;
+}
+/*page*/
+.page{
+	min-height: 100%;
+	position:absolute;
+	width:7.5rem;
+	box-shadow: 0 0 1rem gray;
+	box-sizing: border-box;
+	top: 0;
+	left: 0;
+}
+
+
+/*alert*/
+#alert{
+	z-index: 99;
+	display: none;
+	width: 4rem;
+	border-radius: 0.3rem;
+	padding:0.7rem ;
+	background-color: #FFFFFF;
+	position: fixed;
+	top: 35%;
+	left: 50%;
+	margin-left: -2.7rem;
+	box-shadow: 0 0 0.3rem  #D6D6D6;
+}
+#alert span{
+	display: inline-block;
+	width:4rem;
+	text-align: center;
+	font-size: 0.4rem;
+}
+#alert button{
+	display: block;
+	background:url(../img/login_register.png) no-repeat;
+	background-size: 100%;
+	border: none;
+	font-size: 0.3rem;
+	width: 100%;
+	height: 0.8rem;
+	padding: 0.1rem 0;
+	position: relative;
+	top: 0.3rem;
+	color: #FFFFFF;
+}
+#alert button:hover{
+	background-color: ghostwhite;
+}
+
+
+/*page_login*/
+#page_login{
+	padding: 0 0.3rem;
+}
+#page_login .bg{
+	width:100%;
+	height: 100%;
+	position:absolute;
+	top: 0;
+	left: 0;
+}
+#page_login .bg_d{
+	background:url(../img/bg.jpg) no-repeat ;
+	background-size:cover;
+	z-index: -99;
+}
+
+#page_login h3{
+	font-size:1rem;
+	margin-top: 1rem;
+	color: #FFFFFF;
+}
+#page_login input{
+	width:6rem;
+	position:relative;
+	left: 50%;
+	margin-left:-3rem;
+	height: 1rem;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid lightgrey;
+	font-size: 0.5rem;
+	color: gray;
+}
+#username{
+	margin-top: 2rem;
+}
+#password{
+	margin-top: 0.2rem;
+}
+#page_login #login{
+	width: 5rem;
+	height: 1rem;
+	text-align: center;
+	background: url(../img/login_register.png) no-repeat;
+	background-size: 100%;
+	font-size: 0.4rem;
+	border: none;
+	margin-top: 1.6rem;
+	color: #FFFFFF;
+	position: relative;
+	left: 50%;
+	margin-left: -2.5rem;
+}
+#page_login>span{
+	margin-top: 0.2rem;
+	font-size: 0.3rem;
+	color: #0085ab;
+	position: absolute;
+}
+#page_login>span:hover{
+	cursor: pointer;
+	color: #000000;
+}
+#page_login .line{
+	height: 0.25rem;
+	border-left: 2px solid #0085ab;
+	position: absolute;
+	left: 50%;
+	margin-left: ;
+	margin-top: 0.3rem;
+}
+#page_login>span#re_password{
+	left: 50%;
+	margin-left: 0.1rem;
+}
+#page_login>span#login_register{
+	right: 50%;
+	margin-right: 0.1rem;
+}
+
+
+/*page_register*/
+#register_tips{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 7.5rem;
+	background:#FFFFFF;
+	text-align: center;
+	font-size: 0.3rem;
+	color: red;
+	display: none;
+}
+
+#page_register{
+	padding: 0 0.3rem;
+}
+#page_register .bg{
+	width:100%;
+	height:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#page_register .bg_d{
+	background:url(../img/bg.jpg) no-repeat ;
+	background-size: cover;
+	z-index: -99;
+}
+
+#page_register h3{
+	font-size:1rem;
+	margin-top: 1rem;
+	color: #FFFFFF;
+}
+
+#page_register input{
+	width:6rem;
+	position:relative;
+	left: 50%;
+	margin-left:-3rem;
+	height: 1rem;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid lightgrey;
+	font-size: 0.5rem;
+	color: gray;
+}
+#username2{
+	margin-top: 2rem;
+}
+#password2{
+	margin-top: 0.2rem;
+}
+#page_register #register{
+	width: 5rem;
+	height: 1rem;
+	text-align: center;
+	background: url(../img/login_register.png) no-repeat;
+	background-size: 100%;
+	font-size: 0.4rem;
+	border: none;
+	margin-top: 1.6rem;
+	color: #FFFFFF;
+	position: relative;
+	left: 50%;
+	margin-left: -2.5rem;
+}
+#page_register>span{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 0.3rem;
+	color: #0085ab;
+}
+#page_register>span:hover{
+	cursor: pointer;
+	color: #000000;
+}
+
+/*page_linker*/
+#page_linker{
+	width: 7.5rem;
+	background: #FFFFFF;
+}
+#page_linker .head{
+	height: 0.7rem;
+	line-height: 0.7rem;
+	position:absolute;
+	top: 0;
+	left: 0;
+	background-color: #0085ab;
+	color: white;
+	font-size: 0.4rem;
+	text-align: center;
+	width: 100%;
+}
+#others_fun{
+	width: 0.6rem;
+	height: 0.6rem;
+	position: absolute;
+	left: 0.1rem;
+	top: 0.05rem;
+	border-radius: 0.3rem;
+	background: #FFFFFF;
+	box-shadow: 0 0 0.2rem #454545;
+}
+#others_fun>div{
+	width: 7rem;
+	height: 1rem;
+	background: #FFFFFF;
+	z-index: 10;
+	position: relative;
+	left: 0.2rem;
+	top: 0.2rem;
+	border-radius: 0.2rem;
+	box-shadow: 0 0 0.2rem gray;
+	padding: 0.1rem  0.2rem;
+	box-sizing: border-box;
+	display: none;
+}
+#others_fun>div a{
+	float: left;
+	width: 0.8rem;
+	height: 0.8rem;
+	background: #0085ab;
+	border-radius: 0.1rem;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 0.8rem;
+	font-size: 0.3rem;
+}
+#add_friend{
+	margin-top: 0.8rem;
+	margin-bottom: 0.3rem;
+	width: 100%;
+	box-sizing:border-box;
+	padding:0 0.2rem;
+	position: relative;
+}
+#add_friend input{
+	border: none;
+	font-size: 0.3rem;
+	width: 6rem;
+	height: 0.5rem;
+	background: rgb(237,238,242);
+	border-radius: 0.3rem;
+	color: rgb(168,168,168);
+	padding-left: 0.2rem;
+}
+#add_friend button{
+	width: 0.9rem;
+	height: 0.5rem;
+	position: absolute;
+	bottom: 0;
+	border-radius: 0.3rem;
+	margin-left: 0.1rem;
+	background:rgb(237,238,242) ;
+	border: none;
+	font-size: 0.3rem;
+	color: rgb(168,168,168);
+	
+}
+
+.addfriend{
+	overflow: hidden;
+	box-sizing: border-box;
+	margin: 0 0.2rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	background:rgb(237,238,242) ;
+	border-radius: 0.3rem;
+	text-align: center;
+	position: relative;
+}
+.addfriend p{
+	color:#7f8fa4;
+}
+.addfriend>div{
+	width: 2rem;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -1rem;
+	margin-top: -0.4rem;
+	display: none;
+}
+.addfriend>div button{
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 0.4rem;
+	border: none;
+	color: #000000;
+}
+.addfriend>div .yes{
+	float: right;
+	background: #00BFFF;
+}
+.addfriend>div .no{
+	float: left;
+	background: #FF0000;
+}
+
+
+
+
+
+#page_linker .linker_list li{
+	background: #FFFFFF;
+	width: 7.5rem;
+	height: 1.6rem;
+	box-sizing: border-box;
+	padding: 0.1rem 0.2rem;
+	border-bottom: 1px solid  #e6e9ec;
+	position: relative;
+}
+#page_linker .linker_list img{
+	width: 1rem;
+	height: 1rem;
+	float: left;
+	margin-top:0.2rem ;
+	margin-right: 0.2rem;
+}
+#page_linker .linker_list .linker_name{
+	font-size: 0.4rem;
+	height: 0.7rem;
+	line-height: 0.9rem;
+	float: left;
+	width: 4rem;
+}
+#page_linker .linker_list .pre_message{
+	color:#7f8fa4;
+	float: left;
+	height: 0.7rem;
+	width: 4rem;
+	font-size: 0.3rem;
+	overflow: hidden;
+	white-space: nowrap;
+	word-break: break-all;
+	text-overflow: ellipsis;
+}
+
+
+#page_linker .linker_list .time{
+	color:#7f8fa4;
+	float: right;
+	height: 0.7rem;
+	line-height:0.9rem;
+	font-size: 0.3rem;
+	position: relative;
+}
+#page_linker .linker_list .linker_newmessage{
+	color:#FFFFFF;
+	font-size: 0.3rem;
+	background-color:#FF0000;
+	width: 0.4rem;
+	height: 0.4rem;
+	border-radius: 0.2rem;
+	text-align: center;
+	float: right;
+}
+
+/*message window*/
+.message_window{
+	width:7.5rem;
+	background:rgb(235,235,239);
+}
+
+/*.message_window .main div{
+	width: 7.5rem;
+	height: 1rem;
+	background-color: deeppink;
+	margin:2rem 0;
+}*/
+
+/*head*/
+.message_window .head{
+	height: 0.7rem;
+	line-height: 0.7rem;
+	box-sizing: border-box;
+	position:fixed;
+	top: 0;
+	left: 0;
+	padding: 0 1rem 0rem 0;
+	background-color: #0085ab;
+	color: white;
+	font-size: 0.4rem;
+	text-align: center;
+	width: 100%;
+	z-index: 99;
+}
+.message_window .head span{
+	width: 1rem;
+	float: left;
+}
+
+/*main*/
+.message_window .main{
+	background:rgb(235,235,239);
+	padding: 1.2rem 0.2rem;
+	overflow: auto;
+}
+.message_window .main>div{
+	width:100%;
+	float: left;
+}
+.message_window .main .you_face,.my_face{
+	width: 0.8rem;
+	height: 0.8rem;
+}
+.message_window .main .you_face{
+	margin-right: 0.3rem;
+	float: left;
+}
+.message_window .main .my_face{
+	margin-left: 0.3rem;
+	float: right;
+}
+.message_window .main .message_content{
+	color: #000000;
+	max-width: 4.4rem;
+	font-size: 0.4rem;
+	line-height: 0.4rem;
+	margin-bottom: 0.5rem;
+	padding: 0.2rem;
+	border-radius: 0.2rem;
+	word-break: break-all;
+	overflow-wrap: break-word;
+}
+.message_window .main .you .message_content{
+	float: left;
+	background: #DDDDDD;
+}
+.message_window .main .my .message_content{
+	float: right;
+	background: #0085ab;
+}
+
+
+.message_window  .send_message{
+	height: 0.5rem;
+	width:100%;
+	box-sizing: border-box;
+	padding-left: 0.1rem;
+	height: 0.8rem;
+	position:absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+}
+.message_window .send_message input{
+	height: 100%;
+	width: 7.3rem;
+	background:#FFFFFF;
+	border: none;
+	border-radius:0.15rem;
+	font-size: 0.4rem;
+}
+.message_window .posi{
+	display: none;
+	background: #FFFFFF;
+	width:7.3rem;
+	height: 0.5rem;
+	position:fixed;
+	bottom: 0;
+	left: 0.1rem;
+	background: rgba(237,238,242);
+	border-radius:0.15rem;
+	z-index: 98;
+}
+
+
+
